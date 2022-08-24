@@ -92,6 +92,7 @@ html {
   margin: 5px;
   padding: 10px 40px;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav-items-li:hover, #more-button-label:hover {
@@ -99,7 +100,6 @@ html {
   color: white;
   border-radius: 50px;
   opacity: 70%;
-  cursor: pointer;
 }
 
 .nav-items-li:focus-within {
@@ -122,6 +122,18 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+#popup-wrapper:hover > #central-button-label {
+  opacity: 100%;
+  box-shadow: 0px 3px 14px rgba(74, 58, 255, 0.03), 0px -2px 4px rgba(20, 20, 43, 0.02), 0px 12px 24px rgba(20, 20, 43, 0.04);
+  border-radius: 10px;
+}
+
+#popup-wrapper:focus-within > #central-button-label {
+  opacity: 100%;
+  box-shadow: 0px 3px 14px rgba(74, 58, 255, 0.03), 0px -2px 4px rgba(20, 20, 43, 0.02), 0px 12px 24px rgba(20, 20, 43, 0.04);
+  border-radius: 10px;
 }
 
 #central-button-logo {
@@ -149,18 +161,6 @@ html {
   #central-button-label {
     margin-top: 5px;
   }
-}
-
-#central-button-label:hover {
-  opacity: 100%;
-  box-shadow: 0px 3px 14px rgba(74, 58, 255, 0.03), 0px -2px 4px rgba(20, 20, 43, 0.02), 0px 12px 24px rgba(20, 20, 43, 0.04);
-  border-radius: 10px;
-}
-
-#central-button:focus ~ #central-button-label {
-  opacity: 100%;
-  box-shadow: 0px 3px 14px rgba(74, 58, 255, 0.03), 0px -2px 4px rgba(20, 20, 43, 0.02), 0px 12px 24px rgba(20, 20, 43, 0.04);
-  border-radius: 10px;
 }
 
 #popup-section {
